@@ -1,0 +1,80 @@
+                                            
+                                            <!-- Entendendo o DOM -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros Passos com DOM</title>
+<style>
+    body {
+        background:rgb(10, 75, 218);
+        color: rgb(252, 175, 33);
+        font: normal 10pt Arial;
+    }
+</style>    
+
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <div name="lblnome">Esforçado</div>
+
+    <!--O que é DOM? Document Object Model.
+    É um modelo de objetos  para documentos, um conjunto de objetos dentro do navegador que da acesso
+    a componentes internos do website.
+    Não funciona dentro do Node.js, roda apenas no site.
+
+    Aprender a usar a Árvore DOM.
+    Basicamente a árvore DOM começa da raiz chamada Window.
+    Dentro da Window tem 3 objetos.
+
+                                                                             (child - filho de html)
+                                                      (Parent -pai)             -> meta
+           ->History (De onde veio, pra onde vai)         -> Head                -> title
+    Window ->Document(documento atual) - - - - - ->  Html         
+           ->Location(url)                                ->Body -> h1
+                                                                  -> p
+                                                                   -> p   -> strong
+                                                                    -> div
+    
+    -->
+    <script>
+     //window.document.write(window.document.URL); //Da para acessar vários componentes usando DOM
+
+          //Selecionando por Marca:
+
+         //var p1 = window.document.getElementsByTagName('p')[0]; //pegando o primeiro[0] parágrafo,  [1] é o segundo e por ai vai.
+       // window.document.write("Está escrito assim: " + p1.innerText);
+        // var corpo = window.document.body;
+       // p1.style.color = 'black';
+        //corpo.style.background = 'black';
+        //document.write(p1.innerHTML);
+
+            //Selecionando por ID: 
+           //  var d = window.document.getElementById('msg');
+           
+            // d.style.background = 'black';
+           // document.write(d.innerText);
+            //d.innerText = 'Estou aguardando';
+           // window.document.getElementById('msg').innerText = 'Olá!';
+
+             //Selecionando por Nome: 
+            //window.document.getElementByName('lblnome');
+
+            //QuerySelector versões mais recente
+            var d = window.document.querySelector('div#msg'); //Quando é div usa "#"" e quando classe "."
+            d.style.color ='yellow';
+
+
+
+
+
+
+    </script>
+</body>
+</html>
