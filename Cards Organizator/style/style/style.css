@@ -73,20 +73,20 @@ input{
 }
 
 .status-life {
-  width: 200px;
+  width: 250px;
   height: 26px;
   background: red;
   border-radius: 8px;
 
 }
 
-/*.status-mana {
-  width: 200px;
+.status-mana {
+  width: 250px;
   height: 26px;
   background: #4081d6;
   border-radius: 8px;
 }
-*/
+
 .total {
   position: relative;
   bottom: 24px;
