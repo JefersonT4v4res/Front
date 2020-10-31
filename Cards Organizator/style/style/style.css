@@ -94,27 +94,16 @@ input{
 }
 
 
-
-
-.health-box {
-  background-color: #ccc;
-  height: 30px;
-  width: 500px;
-  margin: 0 auto;
-  border: solid 1px #aaa;
+.shield {
+  width: 1px;
+  height: 1px;
+  margin: 1px auto;
 }
 
-
-
-.health-bar-red {
-  width: 50%;
-  height: 100%;
-  background-color: #cc0000;
+.internal{
+  fill: white;
 }
 
-
-
-.health-bar-text {
-  position: relative;
-  bottom: 80px;
+.external {
+  fill: aqua;
 }
