@@ -1,0 +1,120 @@
+html {
+    font-family: 'Nunito';
+}
+
+body {
+    background-color: #5f6ca1;
+    color: white;
+}
+
+.boards {
+    display: flex;
+    margin-top: 28px;
+}
+
+.board {
+    background: #343746;
+    border: 1px solid #282a36;
+    border-radius: 6px;
+    margin: 0 10px;
+}
+
+.board h3 {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.dropzone {
+    padding: 16px;
+    min-width: 200px;
+    min-height: 340px;
+}
+
+.card {
+    background-color: #1A1A1C;
+    padding: 20px;
+    box-shadow: 0 2px 2px -1px #bd93f9cc;
+    width: 260px;
+    height: 340px;
+    margin: 25px 0;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+input{
+    font-size: medium;
+    font: bold;
+    text-align: center;
+    color: #1A1A1C;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inpDano{
+  margin-left: 60px;
+  width: 50px;
+}
+
+.inpCura{
+  width: 50px;
+}
+
+.status {
+    width: 250px;
+    height: 26px;
+    margin: 10px auto; /*top right bottom left*/
+    background: gray;
+    border: solid 1px #aaa;
+    border-radius: 8px;
+}
+
+.status-life {
+  width: 200px;
+  height: 26px;
+  background: red;
+  border-radius: 8px;
+
+}
+
+/*.status-mana {
+  width: 200px;
+  height: 26px;
+  background: #4081d6;
+  border-radius: 8px;
+}
+*/
+.total {
+  position: relative;
+  bottom: 24px;
+  left: 45%;
+}
+
+
+
+
+.health-box {
+  background-color: #ccc;
+  height: 30px;
+  width: 500px;
+  margin: 0 auto;
+  border: solid 1px #aaa;
+}
+
+
+
+.health-bar-red {
+  width: 50%;
+  height: 100%;
+  background-color: #cc0000;
+}
+
+
+
+.health-bar-text {
+  position: relative;
+  bottom: 80px;
+}
