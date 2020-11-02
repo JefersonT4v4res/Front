@@ -5,6 +5,8 @@ html {
 body {
     background-color: #5f6ca1;
     color: white;
+    display: flex;
+    margin: auto;
 }
 
 .boards {
@@ -37,11 +39,12 @@ body {
     padding: 20px;
     box-shadow: 0 2px 2px -1px #bd93f9cc;
     width: 260px;
-    height: 340px;
+    height: 400px;
     margin: 25px 0;
     border-radius: 4px;
     font-weight: 600;
     font-size: 18px;
+    
 }
 
 input{
@@ -62,6 +65,8 @@ input{
 .inpCura{
   width: 50px;
 }
+
+
 
 .status {
     width: 250px;
@@ -95,15 +100,55 @@ input{
 
 
 .shield {
-  width: 1px;
-  height: 1px;
-  margin: 1px auto;
+  width: 35px;
+  height: 35px;
+  margin: 5px auto;
+  margin-top: 15px;
+  margin-right: 700px;
+  margin-bottom: 50px;
+}
+
+.valueShield {
+  margin: 10px;
+  margin-top: 0;
+  margin-left: 25px;
+}
+
+.Armor {
+  font: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: #1A1A1C;
+  position: relative;
+  bottom: 58px;
+  left: 19px;
+}
+
+.value {
+  position: relative;
+  bottom: 65px;
+  left: 20px;
+}
+
+.inpArmor {
+  width: 20px;
+  border-radius: 30px;
+}
+
+.Class {
+  font: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: #1A1A1C;
+  position: relative;
+  bottom: 70px;
+  left: 19px;
 }
 
 .internal{
-  fill: white;
+  fill: #fafafa;
 }
 
 .external {
-  fill: aqua;
+  fill: #D3D3D3;
 }
