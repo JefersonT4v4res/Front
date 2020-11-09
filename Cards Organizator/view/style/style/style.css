@@ -6,32 +6,32 @@ body {
     background-color: #5f6ca1;
     color: white;
     display: flex;
-    margin: auto;
+    margin: auto; /*top right bottom left*/
 }
 
 .boards {
     display: flex;
-    margin-top: 28px;
+    margin-top: 30px;
 }
 
 .board {
     background: #343746;
     border: 1px solid #282a36;
     border-radius: 6px;
-    margin: 0 10px;
+    margin: 0 20px; /*top right bottom left*/
 }
 
 .board h3 {
-    padding: 10px;
-    margin: 0;
+    padding: 1px;
+    margin: 70px 1px 0px 1px; /*top right bottom left*/
     text-align: center;
     color: white;
 }
 
 .dropzone {
     padding: 16px;
-    min-width: 200px;
-    min-height: 340px;
+    min-width: 240px;
+    min-height: 380px;
 }
 
 .card {
@@ -39,8 +39,8 @@ body {
     padding: 20px;
     box-shadow: 0 2px 2px -1px #bd93f9cc;
     width: 260px;
-    height: 400px;
-    margin: 25px 0;
+    height: 450px;
+    margin: 25px 0; /*top right bottom left*/
     border-radius: 4px;
     font-weight: 600;
     font-size: 18px;
@@ -66,7 +66,13 @@ input{
   width: 50px;
 }
 
-
+.inpNome{
+  margin-left: 15%;
+  width: 220px;
+  border-radius: 10px;
+  border: solid 2px #bd93f9cc;
+  
+}
 
 .status {
     width: 250px;
@@ -103,10 +109,11 @@ input{
   width: 35px;
   height: 35px;
   margin: 5px auto;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-right: 700px;
   margin-bottom: 50px;
 }
+
 
 .valueShield {
   margin: 10px;
