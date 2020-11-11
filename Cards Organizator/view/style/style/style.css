@@ -106,11 +106,10 @@ input{
 
 
 .shield {
-  width: 35px;
+  width: 45px;
   height: 35px;
-  margin: 5px auto;
   margin-top: 25px;
-  margin-right: 700px;
+  margin-right: 400px;
   margin-bottom: 50px;
 }
 
@@ -128,13 +127,13 @@ input{
   color: #1A1A1C;
   position: relative;
   bottom: 58px;
-  left: 19px;
+  left: 22px;
 }
 
 .value {
   position: relative;
   bottom: 65px;
-  left: 20px;
+  left: 24px;
 }
 
 .inpArmor {
@@ -149,7 +148,7 @@ input{
   color: #1A1A1C;
   position: relative;
   bottom: 70px;
-  left: 19px;
+  left: 22px;
 }
 
 .internal{
@@ -159,3 +158,4 @@ input{
 .external {
   fill: #D3D3D3;
 }
+
