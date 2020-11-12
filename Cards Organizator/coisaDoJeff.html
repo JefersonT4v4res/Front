@@ -1,54 +1,359 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Cards organizator</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./view/style/style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900" rel="stylesheet">
-    
-  </head>
 
-  <body>
-  <!--Inicio-->    
-    <div class="boards">
-        <div class="board">
-          <h3> 1º </h3>
-          <input placeholder="Nome" class="inpNome">
-            <div class="dropzone">
-                <div class="card" draggable="true">
-                  <!--Inicio do card-->
-                          <img src="./view/imagens/babaca.jpg" alt="babaca cara!" width="260" height="200">
+<head>
+  <title>Cards organizator</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./view/style/style/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900" rel="stylesheet">
 
-                                <div class="area">
-                                  <input placeholder="Dano" class="inpDano">
-                                  <input  placeholder="Cura" class="inpCura">
-                                </div>
+</head>
 
-                              <div class="status">
-                                  <div class="status-life"></div>
-                                  <div class="total">16</div>
-                              </div>
+<body>
+  <!--Inicio-->
+  <div class="boards">
+    <div class="board">
+      <h3> 1º </h3>
+      <input placeholder="Nome" class="inpNome">
+      <div class="dropzone">
+        <div class="card" draggable="true">
+          
+          <!--Inicio do card-->
+          <img src="./view/imagens/ruffel.jpg" alt="babaca cara!" width="260" height="200">
 
-                      <div class="shield">
-                        
-                       <!-- <img width="300" height="100" src="./view/imagens/capitu.svg" alt="Shield" /> -->
-                        <img width="130" height="130" src="./view/imagens/shield.svg" alt="Shield" />
-                       
-                    </div> 
-                     <div class="valueShield">
-                     <div class="Armor">Armor</div>
-                     <div class="value">
-                      <input  placeholder="0" class="inpArmor">
-                     </div>
-                     <div class="Class">Class</div>
-                     </div>
-              <!--Final do card-->
-                </div>    
+          <div class="area">
+            <input placeholder="Dano" class="inpDano">
+            <input placeholder="Cura" class="inpCura">
+          </div>
+
+          <div class="status">
+            <div class="status-life"></div>
+            <div class="total">23</div>
+          </div>
+<!--         
+          <div class="brokenContainer"> 
+             <div class="shieldBroken"> 
+                <img class="capitu" src="./view/imagens/capitu.svg" alt="ShieldBroken" />
+             </div> 
+              <div class="valueShieldBronken">
+                <div class="valuebroken">
+                  <input  placeholder="0" class="inpArmor">
+               </div>
+             </div>
+          </div>
+
+--> 
+      <div class="grid-container">
+          <div class="container">
+            <div class="shield">
+              <img id="escudo"  src="./view/imagens/shield.svg" alt="Shield" />
             </div>
-        </div>   
+
+            <div class="valueShield">  
+              <div class="value">
+                <input placeholder="0" class="inpArmor">
+              </div>
+            </div>
+          </div>
+
+          <div class="containerSentido">
+              <div class="sentidos">
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Perception</div>
+                      <div class="numPercepcao">11</div>
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Investigation</div>
+                      <div class="numPercepcao">17</div>
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Insight</div>
+                      <div class="numPercepcao">11</div>
+               </div>
+          </div>
+      </div>   
+
+          <!--Final do card-->
+
+        </div>
       </div>
-<!--Final-->
+    </div>
+  </div>
+  <!--Final-->
+
+  <div class="boards">
+    <div class="board">
+      <h3> 2º </h3>
+      <input placeholder="Nome" class="inpNome">
+      <div class="dropzone">
+        <div class="card" draggable="true">
+          
+          <!--Inicio do card-->
+          <img src="./view/imagens/oughan.jpg" alt="babaca cara!" width="260" height="200">
+
+          <div class="area">
+            <input placeholder="Dano" class="inpDano">
+            <input placeholder="Cura" class="inpCura">
+          </div>
+
+          <div class="status">
+            <div class="status-life"></div>
+            <div class="total">30</div>
+          </div>
+<!--         
+          <div class="brokenContainer"> 
+             <div class="shieldBroken"> 
+                <img class="capitu" src="./view/imagens/capitu.svg" alt="ShieldBroken" />
+             </div> 
+              <div class="valueShieldBronken">
+                <div class="valuebroken">
+                  <input  placeholder="0" class="inpArmor">
+               </div>
+             </div>
+          </div>
+
+--> 
+      <div class="grid-container">
+          <div class="container">
+            <div class="shield">
+              <img id="escudo"  src="./view/imagens/shield.svg" alt="Shield" />
+            </div>
+
+            <div class="valueShield">  
+              <div class="value">
+                <input placeholder="0" class="inpArmor">
+              </div>
+            </div>
+          </div>
+
+          <div class="containerSentido">
+              <div class="sentidos">
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Perception</div>
+                      <div class="numPercepcao">13</div>
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Investigation</div>
+                      <div class="numPercepcao">9</div>
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Insight</div>
+                      <div class="numPercepcao">13</div>
+               </div>
+          </div>
+      </div>   
+
+          <!--Final do card-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Final-->
+
+  <div class="boards">
+    <div class="board">
+      <h3> 3º </h3>
+      <input placeholder="Nome" class="inpNome">
+      <div class="dropzone">
+        <div class="card" draggable="true">
+          
+          <!--Inicio do card-->
+          <img src="./view/imagens/Sana.png" alt="babaca cara!" width="260" height="200">
+
+          <div class="area">
+            <input placeholder="Dano" class="inpDano">
+            <input placeholder="Cura" class="inpCura">
+          </div>
+
+          <div class="status">
+            <div class="status-life"></div>
+            <div class="total">33</div>
+          </div>
+<!--         
+          <div class="brokenContainer"> 
+             <div class="shieldBroken"> 
+                <img class="capitu" src="./view/imagens/capitu.svg" alt="ShieldBroken" />
+             </div> 
+              <div class="valueShieldBronken">
+                <div class="valuebroken">
+                  <input  placeholder="0" class="inpArmor">
+               </div>
+             </div>
+          </div>
+
+--> 
+      <div class="grid-container">
+          <div class="container">
+            <div class="shield">
+              <img id="escudo"  src="./view/imagens/shield.svg" alt="Shield" />
+            </div>
+
+            <div class="valueShield">  
+              <div class="value">
+                <input placeholder="0" class="inpArmor">
+              </div>
+            </div>
+          </div>
+
+          <div class="containerSentido">
+              <div class="sentidos">
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Perception</div>
+                      <div class="numPercepcao">16</div>
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Investigation</div>
+                      <div class="numPercepcao">13</div>
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Insight</div>
+                      <div class="numPercepcao">14</div>
+               </div>
+          </div>
+      </div>   
+
+          <!--Final do card-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Final-->
+
+  <div class="boards">
+    <div class="board">
+      <h3> 4º </h3>
+      <input placeholder="Nome" class="inpNome">
+      <div class="dropzone">
+        <div class="card" draggable="true">
+          
+          <!--Inicio do card-->
+          <img src="./view/imagens/yabash.jpg" alt="babaca cara!" width="260" height="200">
+
+          <div class="area">
+            <input placeholder="Dano" class="inpDano">
+            <input placeholder="Cura" class="inpCura">
+          </div>
+
+          <div class="status">
+            <div class="status-life"></div>
+            <div class="total">23</div>
+          </div>
+<!--         
+          <div class="brokenContainer"> 
+             <div class="shieldBroken"> 
+                <img class="capitu" src="./view/imagens/capitu.svg" alt="ShieldBroken" />
+             </div> 
+              <div class="valueShieldBronken">
+                <div class="valuebroken">
+                  <input  placeholder="0" class="inpArmor">
+               </div>
+             </div>
+          </div>
+
+--> 
+      <div class="grid-container">
+          <div class="container">
+            <div class="shield">
+              <img id="escudo"  src="./view/imagens/shield.svg" alt="Shield" />
+            </div>
+
+            <div class="valueShield">  
+              <div class="value">
+                <input placeholder="0" class="inpArmor">
+              </div>
+            </div>
+          </div>
+
+          <div class="containerSentido">
+              <div class="sentidos">
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Perception</div>
+                      <div class="numPercepcao">14</div>
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Investigation</div>
+                      <div class="numPercepcao">13</div>
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Insight</div>
+                      <div class="numPercepcao">12</div>
+               </div>
+          </div>
+      </div>   
+
+          <!--Final do card-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Final-->
+
+  <div class="boards">
+    <div class="board">
+      <h3> 5º </h3>
+      <input placeholder="Nome" class="inpNome">
+      <div class="dropzone">
+        <div class="card" draggable="true">
+          
+          <!--Inicio do card-->
+          <img src="./view/imagens/Dorian.jpg" alt="babaca cara!" width="260" height="200">
+
+          <div class="area">
+            <input placeholder="Dano" class="inpDano">
+            <input placeholder="Cura" class="inpCura">
+          </div>
+
+          <div class="status">
+            <div class="status-life"></div>
+            <div class="total">31</div>
+          </div>
+<!--         
+          <div class="brokenContainer"> 
+             <div class="shieldBroken"> 
+                <img class="capitu" src="./view/imagens/capitu.svg" alt="ShieldBroken" />
+             </div> 
+              <div class="valueShieldBronken">
+                <div class="valuebroken">
+                  <input  placeholder="0" class="inpArmor">
+               </div>
+             </div>
+          </div>
+
+--> 
+      <div class="grid-container">
+          <div class="container">
+            <div class="shield">
+              <img id="escudo"  src="./view/imagens/shield.svg" alt="Shield" />
+            </div>
+
+            <div class="valueShield">  
+              <div class="value">
+                <input placeholder="0" class="inpArmor">
+              </div>
+            </div>
+          </div>
+
+          <div class="containerSentido">
+              <div class="sentidos">
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Perception</div>
+                      <div class="numPercepcao">15</div>
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Investigation</div>
+                      <div class="numPercepcao">12</div>
+                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
+                      <div class="percepcao">Insight</div>
+                      <div class="numPercepcao">13</div>
+               </div>
+          </div>
+      </div>   
+
+          <!--Final do card-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Final-->
+
+  
 
 
-  </body>
+</body>
+
 </html>

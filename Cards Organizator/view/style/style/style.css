@@ -23,7 +23,7 @@ body {
 
 .board h3 {
     padding: 1px;
-    margin: 70px 1px 0px 1px; /*top right bottom left*/
+    margin: 50px 1px 0px 1px; /*top right bottom left*/
     text-align: center;
     color: white;
 }
@@ -39,8 +39,8 @@ body {
     padding: 20px;
     box-shadow: 0 2px 2px -1px #bd93f9cc;
     width: 260px;
-    height: 450px;
-    margin: 25px 0; /*top right bottom left*/
+    height: 520px;
+    margin: 10px 0 10px 0; /*top right bottom left*/
     border-radius: 4px;
     font-weight: 600;
     font-size: 18px;
@@ -71,12 +71,11 @@ input{
   width: 220px;
   border-radius: 10px;
   border: solid 2px #bd93f9cc;
-  
 }
 
 .status {
     width: 250px;
-    height: 26px;
+    height: 20px;
     margin: 10px auto; /*top right bottom left*/
     background: gray;
     border: solid 1px #aaa;
@@ -85,7 +84,7 @@ input{
 
 .status-life {
   width: 250px;
-  height: 26px;
+  height: 20px;
   background: red;
   border-radius: 8px;
 
@@ -100,62 +99,125 @@ input{
 
 .total {
   position: relative;
-  bottom: 24px;
+  bottom: 22px;
   left: 45%;
 }
 
-
-.shield {
-  width: 45px;
-  height: 35px;
-  margin-top: 25px;
-  margin-right: 400px;
-  margin-bottom: 50px;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2px 5px;
+ 
 }
 
+
+
+/* Div Escudo Quebrado  */
+.brokenContainer {
+  width: 240px;
+  height: 140px;
+  padding-right: 10px;
+ 
+}
+
+.shieldBroken {
+  width: 45px;
+  height: 35px; 
+}
+
+.capitu {
+  width: 185px;
+  height: 155px;
+}
+
+.valueShieldBronken{
+  margin: 10px;
+  margin-top: 12px;
+  margin-left: 68px;
+}
+
+.valuebroken{
+  position: relative;
+}
+
+/* Div Escudo Quebrado  */
+
+
+/* Div Escudo Inteiro  */
+
+.container {
+  width: 115px;
+  height: 110px;
+  margin: 30px 15px 20px 0; /*top right bottom left*/
+
+}
+
+.shield {
+  width: 10px;
+  height: 35px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
 
 .valueShield {
   margin: 10px;
   margin-top: 0;
-  margin-left: 25px;
+  margin-left: 55px;
 }
 
-.Armor {
-  font: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
-  color: #1A1A1C;
-  position: relative;
-  bottom: 58px;
-  left: 22px;
-}
 
 .value {
   position: relative;
-  bottom: 65px;
-  left: 24px;
+  bottom: 55px;
+  right: 15px;
 }
 
 .inpArmor {
-  width: 20px;
+  width: 35px;
   border-radius: 30px;
+  background: transparent;
+  border: solid 0;
+  font-size: 30px;
+
 }
 
-.Class {
-  font: bold;
+/* Div Escudo Inteiro  */
+
+
+
+/*DIV   Sentidos */
+
+.containerSentido {
+  margin: 20px 120px 10px 0; /*top right bottom left*/
+}
+
+.sentidos{
+  width: 100px;
+  height: 60px;
+}
+
+.sentido1 {
+  width: 130px;
+  height: 45px;
+}
+
+.percepcao {
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
-  color: #1A1A1C;
   position: relative;
-  bottom: 70px;
-  left: 22px;
+  bottom: 35px;
+  right: 7px;
 }
 
-.internal{
-  fill: #fafafa;
+.numPercepcao{
+  width: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  bottom: 53px;
+  left: 88px;
 }
-
-.external {
-  fill: #D3D3D3;
-}
-
