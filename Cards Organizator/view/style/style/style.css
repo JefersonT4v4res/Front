@@ -7,6 +7,7 @@ body {
     color: white;
     display: flex;
     margin: auto; /*top right bottom left*/
+    
 }
 
 .boards {
@@ -18,7 +19,7 @@ body {
     background: #343746;
     border: 1px solid #282a36;
     border-radius: 6px;
-    margin: 0 20px; /*top right bottom left*/
+    margin: 10px 10px 10px 10px; /*top right bottom left*/
 }
 
 .board h3 {
@@ -110,19 +111,29 @@ input{
  
 }
 
+.gridCards {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 2px 5px;
+}
+
 
 
 /* Div Escudo Quebrado  */
 .brokenContainer {
-  width: 240px;
-  height: 140px;
-  padding-right: 10px;
+  width: 110px;
+  height: 110px;
+  margin: 30px 15px 20px 0; /*top right bottom left*/
  
 }
 
 .shieldBroken {
-  width: 45px;
-  height: 35px; 
+  width: 10px;
+  height: 35px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  
+  
 }
 
 .capitu {
@@ -132,12 +143,14 @@ input{
 
 .valueShieldBronken{
   margin: 10px;
-  margin-top: 12px;
-  margin-left: 68px;
+  margin-top: 0;
+  margin-left: 55px;
 }
 
 .valuebroken{
   position: relative;
+  bottom: 55px;
+  right: 15px;
 }
 
 /* Div Escudo Quebrado  */
