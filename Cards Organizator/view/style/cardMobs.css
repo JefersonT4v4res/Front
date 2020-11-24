@@ -1,0 +1,66 @@
+ img#info{
+   margin: 10px auto;
+   width: 270px;
+   height: 170px;
+ }
+ 
+ img#EscudoMob {
+    width: 40px;
+    height: 40px;
+    right: 19px;
+    bottom: 30px;
+    position: relative;
+    background-color: transparent;
+  }
+  
+  .status-shield {
+    width: 251px;
+    height: 20px;
+    background: #5189cf;
+    border-radius: 2px;
+    position: relative;
+  
+  }
+  
+  .total-shield {
+    position: relative;
+    bottom: 22px;
+    right: 30px;
+  }
+  
+  
+  /* Div Escudo Quebrado  */
+  .brokenContainer {
+    width: 110px;
+    height: 110px;
+    margin: 30px 15px 20px 0; /*top right bottom left*/
+   
+  }
+  
+  .shieldBroken {
+    width: 10px;
+    height: 35px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    
+    
+  }
+  
+  .capitu {
+    width: 185px;
+    height: 155px;
+  }
+  
+  .valueShieldBronken{
+    margin: 10px;
+    margin-top: 0;
+    margin-left: 55px;
+  }
+  
+  .valuebroken{
+    position: relative;
+    bottom: 55px;
+    right: 15px;
+  }
+  
+  /* Div Escudo Quebrado  */

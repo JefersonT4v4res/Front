@@ -36,7 +36,7 @@ body {
 }
 
 .card {
-    background-color: #1A1A1C;
+    background-color: indigo;
     padding: 20px;
     box-shadow: 0 2px 2px -1px #bd93f9cc;
     width: 260px;
@@ -74,34 +74,47 @@ input{
   border: solid 2px #bd93f9cc;
 }
 
+.grid-barra{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2px 3px;
+}
+
+.area {
+  margin: auto;
+}
+
+img#heart {
+  width: 77px;
+  height: 77px;
+  right: 40px;
+  bottom: 53px;
+  position: relative;
+  background-color: transparent;
+}
+
 .status {
     width: 250px;
     height: 20px;
-    margin: 10px auto; /*top right bottom left*/
-    background: gray;
-    border: solid 1px #aaa;
+    margin: 5px 10px 10px 5px; /*top right bottom left*/
+    background: whitesmoke;
+    border: solid 5px black;
     border-radius: 8px;
 }
 
 .status-life {
-  width: 250px;
+  width: 251px;
   height: 20px;
   background: red;
-  border-radius: 8px;
+  border-radius: 2px;
+  position: relative;
 
-}
-
-.status-mana {
-  width: 250px;
-  height: 26px;
-  background: #4081d6;
-  border-radius: 8px;
 }
 
 .total {
   position: relative;
   bottom: 22px;
-  left: 45%;
+  right: 47px;
 }
 
 .grid-container {
@@ -113,47 +126,11 @@ input{
 
 .gridCards {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
   grid-gap: 2px 5px;
 }
 
 
-
-/* Div Escudo Quebrado  */
-.brokenContainer {
-  width: 110px;
-  height: 110px;
-  margin: 30px 15px 20px 0; /*top right bottom left*/
- 
-}
-
-.shieldBroken {
-  width: 10px;
-  height: 35px;
-  margin-top: 25px;
-  margin-bottom: 50px;
-  
-  
-}
-
-.capitu {
-  width: 185px;
-  height: 155px;
-}
-
-.valueShieldBronken{
-  margin: 10px;
-  margin-top: 0;
-  margin-left: 55px;
-}
-
-.valuebroken{
-  position: relative;
-  bottom: 55px;
-  right: 15px;
-}
-
-/* Div Escudo Quebrado  */
 
 
 /* Div Escudo Inteiro  */
