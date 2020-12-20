@@ -1,0 +1,43 @@
+<img src="./view/imagens/minotaur.png" alt="Half-Elf_Man" width="260" height="200">
+
+<div class="areaSaude">
+  <button class="btnDano">Dano</button>
+  <input type="number" min="0" class="inpValor">
+  <button class="btnCura">Cura</button>
+</div>
+
+<div class="area">
+  <div class="status">
+    <div class="status-life"></div>
+    <div class="grid-barra">
+       <div class="heartLifeBar"> 
+         <img id="heart" src="./view/imagens/heartLifeBar.png" alt="coração" />
+       </div>
+       <div class="total">
+        <input placeholder="0" class="varLife">
+        <span class="spnBar">/</span>
+        <input placeholder="0" class="lifeTotal">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="area">
+  <div class="status">
+    <div class="status-shield"></div>
+    <div class="grid-barra">
+       <div class="shieldMob"> 
+         <img id="EscudoMob" src="./view/imagens/shield.svg" alt="Escudo" />
+       </div>
+       <div class="total-shield">
+        <input placeholder="0" class="varEscudo">
+        <span class="spnBar">/</span>
+        <input placeholder="0" class="escudoTotal">
+       </div>
+    </div>
+  </div>
+</div>
+
+<div class="area">
+  <img id="info" onmouseover="aumenta(this)" onmouseout="diminui(this)" width="270px" height="170px" src="./view/imagens/infoMino.PNG" alt="infoMino" />
+</div>  

@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="./view/style/style.css">
   <link rel="stylesheet" href="./view/style/cardMobs.css">
+  <script src="./controller/sizeImg.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900" rel="stylesheet">
 
 </head>
@@ -22,53 +23,61 @@
       <div class="dropzone">
         <div class="card" draggable="true">
           
-         
-          <img src="./view/imagens/ruffel.jpg" alt="halfling-Ginger" width="260" height="200">
+          <img src="./view/imagens/Ruffel/ruffel.jpg" alt="halfling-Ginger" width="275" height="200">
 
-          <div class="area">
-            <input placeholder="Dano" class="inpDano">
-            <input placeholder="Cura" class="inpCura">
+          <div class="areaSaude">
+            <button class="btnDano">Dano</button>
+            <input type="number" min="0" class="inpValor">
+            <button class="btnCura">Cura</button>
           </div>
-
+          
+          
           <div class="area">
             <div class="status">
               <div class="status-life"></div>
               <div class="grid-barra">
                  <div class="heartLifeBar"> 
-                   <img id="heart" src="./view/imagens/heartLifeBar.png" alt="coração" />
+                   <img id="heart" src="./view/imagens/icones/heartLifeBar.png" alt="coração" />
                  </div>
-                 <div class="total">23</div>
+                 <div class="total">
+                  <input placeholder="0" class="varLife">
+                  <span class="spnBar">/</span>
+                  <input placeholder="0" class="lifeTotal">
+                </div>
               </div>
             </div>
           </div>
-
-      <div class="grid-container">
-          <div class="container">
-            <div class="shield">
-              <img id="escudo"  src="./view/imagens/shield.svg" alt="Shield" />
-            </div>
-
-            <div class="valueShield">  
-              <div class="value">
-                <input placeholder="0" class="inpArmor">
+          
+          <div class="area">
+            <div class="status">
+              <div class="status-shield"></div>
+              <div class="grid-barra">
+                 <div class="shieldMob"> 
+                   <img id="EscudoMob" src="./view/imagens/icones/shield.svg" alt="Escudo" />
+                 </div>
+                 <div class="total-shield">
+                  <input placeholder="0" class="varEscudo">
+                  <span class="spnBar">/</span>
+                  <input placeholder="0" class="escudoTotal">
+                 </div>
               </div>
             </div>
           </div>
-
-          <div class="containerSentido">
-              <div class="sentidos">
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Perception</div>
-                      <div class="numPercepcao">11</div>
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Investigation</div>
-                      <div class="numPercepcao">17</div>
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Insight</div>
-                      <div class="numPercepcao">11</div>
-               </div>
-          </div>
-      </div>   
+          
+               <div class="containerSentido">
+                  <div class="sentidos">
+                      <img id="paperSenses" src="./view/imagens/icones/fundo.png" width="300" height="250">
+                      <div class="percepcao">Perception:
+                      <input placeholder="0" class="numPercepcao">
+                      </div>
+                      <div class="percepcao">Investigation:
+                      <input placeholder="0" class="numPercepcao">
+                      </div>
+                      <div class="percepcao">Insight:
+                      <input placeholder="0" class="numPercepcao">
+                      </div>
+                  </div>
+               </div>   
 
         </div>
       </div>
@@ -84,52 +93,7 @@
       <div class="dropzone">
         <div class="card" draggable="true">
           
-          <img src="./view/imagens/oughan.jpg" alt="Half-Orc" width="260" height="200">
-
-          <div class="area">
-            <input placeholder="Dano" class="inpDano">
-            <input placeholder="Cura" class="inpCura">
-          </div>
-
-          <div class="area">
-            <div class="status">
-              <div class="status-life"></div>
-              <div class="grid-barra">
-                 <div class="heartLifeBar"> 
-                   <img id="heart" src="./view/imagens/heartLifeBar.png" alt="coração" />
-                 </div>
-                 <div class="total">30</div>
-              </div>
-            </div>
-          </div>
-
-      <div class="grid-container">
-          <div class="container">
-            <div class="shield">
-              <img id="escudo"  src="./view/imagens/shield.svg" alt="Shield" />
-            </div>
-
-            <div class="valueShield">  
-              <div class="value">
-                <input placeholder="0" class="inpArmor">
-              </div>
-            </div>
-          </div>
-
-          <div class="containerSentido">
-              <div class="sentidos">
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Perception</div>
-                      <div class="numPercepcao">13</div>
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Investigation</div>
-                      <div class="numPercepcao">9</div>
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Insight</div>
-                      <div class="numPercepcao">13</div>
-               </div>
-          </div>
-      </div>   
+       
 
         </div>
       </div>
@@ -145,54 +109,8 @@
       <div class="dropzone">
         <div class="card" draggable="true">
           
-          <img src="./view/imagens/Sana.png" alt="Half-Elf_Girl" width="260" height="200">
-
-          <div class="area">
-            <input placeholder="Dano" class="inpDano">
-            <input placeholder="Cura" class="inpCura">
-          </div>
-
-          <div class="area">
-            <div class="status">
-              <div class="status-life"></div>
-              <div class="grid-barra">
-                 <div class="heartLifeBar"> 
-                   <img id="heart" src="./view/imagens/heartLifeBar.png" alt="coração" />
-                 </div>
-                 <div class="total">33</div>
-              </div>
-            </div>
-          </div>
-
-      <div class="grid-container">
-          <div class="container">
-            <div class="shield">
-              <img id="escudo"  src="./view/imagens/shield.svg" alt="Shield" />
-            </div>
-
-            <div class="valueShield">  
-              <div class="value">
-                <input placeholder="0" class="inpArmor">
-              </div>
-            </div>
-          </div>
-
-          <div class="containerSentido">
-              <div class="sentidos">
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Perception</div>
-                      <div class="numPercepcao">16</div>
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Investigation</div>
-                      <div class="numPercepcao">13</div>
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Insight</div>
-                      <div class="numPercepcao">14</div>
-               </div>
-          </div>
-      </div>   
-
-
+         
+ 
         </div>
       </div>
     </div>
@@ -208,53 +126,7 @@
         <div class="card" draggable="true">
           
           
-          <img src="./view/imagens/yabash.jpg" alt="WoodElf" width="260" height="200">
-
-          <div class="area">
-            <input placeholder="Dano" class="inpDano">
-            <input placeholder="Cura" class="inpCura">
-          </div>
-
-          <div class="area">
-            <div class="status">
-              <div class="status-life"></div>
-              <div class="grid-barra">
-                 <div class="heartLifeBar"> 
-                   <img id="heart" src="./view/imagens/heartLifeBar.png" alt="coração" />
-                 </div>
-                 <div class="total">23</div>
-              </div>
-            </div>
-          </div>
-
-      <div class="grid-container">
-          <div class="container">
-            <div class="shield">
-              <img id="escudo"  src="./view/imagens/shield.svg" alt="Shield" />
-            </div>
-
-            <div class="valueShield">  
-              <div class="value">
-                <input placeholder="0" class="inpArmor">
-              </div>
-            </div>
-          </div>
-
-          <div class="containerSentido">
-              <div class="sentidos">
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Perception</div>
-                      <div class="numPercepcao">14</div>
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Investigation</div>
-                      <div class="numPercepcao">13</div>
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Insight</div>
-                      <div class="numPercepcao">12</div>
-               </div>
-          </div>
-      </div>   
-
+          
 
         </div>
       </div>
@@ -270,52 +142,7 @@
       <div class="dropzone">
         <div class="card" draggable="true">
           
-          <img src="./view/imagens/Dorian.jpg" alt="Half-Elf_Man" width="260" height="200">
-
-          <div class="area">
-            <input placeholder="Dano" class="inpDano">
-            <input placeholder="Cura" class="inpCura">
-          </div>
-
-          <div class="area">
-            <div class="status">
-              <div class="status-life"></div>
-              <div class="grid-barra">
-                 <div class="heartLifeBar"> 
-                   <img id="heart" src="./view/imagens/heartLifeBar.png" alt="coração" />
-                 </div>
-                 <div class="total">31</div>
-              </div>
-            </div>
-          </div>
-
-      <div class="grid-container">
-          <div class="container">
-            <div class="shield">
-              <img id="escudo"  src="./view/imagens/shield.svg" alt="Shield" />
-            </div>
-
-            <div class="valueShield">  
-              <div class="value">
-                <input placeholder="0" class="inpArmor">
-              </div>
-            </div>
-          </div>
-
-          <div class="containerSentido">
-              <div class="sentidos">
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Perception</div>
-                      <div class="numPercepcao">15</div>
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Investigation</div>
-                      <div class="numPercepcao">12</div>
-                  <img class="sentido1" src="./view/imagens/senses.svg" alt="Sentidos" />
-                      <div class="percepcao">Insight</div>
-                      <div class="numPercepcao">13</div>
-               </div>
-          </div>  
-        </div>
+          
 
       </div>
     </div>
@@ -325,7 +152,7 @@
   <!--Final do card-->
 
  
-      <!--Inicio do card MOBS-->
+  <!--Inicio do card MOBS-->
   <div class="boards">
     <div class="board">
       <h3> 6º </h3>
@@ -333,67 +160,7 @@
       <div class="dropzone">
         <div class="card" draggable="true">
           
-          <img src="./view/imagens/minotaur.png" alt="Half-Elf_Man" width="260" height="200">
-
-          <div class="area">
-            <input placeholder="Dano" class="inpDano">
-            <input placeholder="Cura" class="inpCura">
-          </div>
-
-          <div class="area">
-            <div class="status">
-              <div class="status-life"></div>
-              <div class="grid-barra">
-                 <div class="heartLifeBar"> 
-                   <img id="heart" src="./view/imagens/heartLifeBar.png" alt="coração" />
-                 </div>
-                 <div class="total">67</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="area">
-            <div class="status">
-              <div class="status-shield"></div>
-              <div class="grid-barra">
-                 <div class="shieldMob"> 
-                   <img id="EscudoMob" src="./view/imagens/shield.svg" alt="Escudo" />
-                 </div>
-                 <div class="total-shield">13</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="area">
-            <img id="info" src="./view/imagens/infoMino.PNG" alt="infoMino" />
-          </div>   
-<!--         
-          <div class="brokenContainer"> 
-             <div class="shieldBroken"> 
-                <img class="capitu" src="./view/imagens/capitu.svg" alt="ShieldBroken" />
-             </div> 
-              <div class="valueShieldBronken">
-                <div class="valuebroken">
-                  <input  placeholder="0" class="inpArmor">
-               </div>
-             </div>
-          </div>
-
-          <div class="container">
-            <div class="shield">
-              <img id="escudo"  src="./view/imagens/shield.svg" alt="Shield" />
-            </div>
-
-            <div class="valueShield">  
-              <div class="value">
-                <input placeholder="0" class="inpArmor">
-              </div>
-            </div>
-          </div>
---> 
-
-        
-  
+ 
         </div>
       </div>
     </div>

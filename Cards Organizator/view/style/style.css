@@ -19,12 +19,12 @@ body {
     background: #343746;
     border: 1px solid #282a36;
     border-radius: 6px;
-    margin: 10px 10px 10px 10px; /*top right bottom left*/
+    margin: 10px 10px 10px 2px; /*top right bottom left*/
 }
 
 .board h3 {
     padding: 1px;
-    margin: 50px 1px 0px 1px; /*top right bottom left*/
+    margin: 15px 1px 0px 1px; /*top right bottom left*/
     text-align: center;
     color: white;
 }
@@ -39,11 +39,11 @@ body {
     background-color: indigo;
     padding: 20px;
     box-shadow: 0 2px 2px -1px #bd93f9cc;
-    width: 260px;
-    height: 520px;
-    margin: 10px 0 10px 0; /*top right bottom left*/
+    width: 290px;
+    height: 620px;
+    margin: 10px 10px 10px 1px; /*top right bottom left*/
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 18px;
     
 }
@@ -58,17 +58,34 @@ input{
     margin-bottom: 10px;
 }
 
-.inpDano{
-  margin-left: 60px;
+.areaSaude {
+  margin: auto;
+  padding-left: 20%;
+ }
+
+.btnDano{
+  font-weight: bold;
   width: 50px;
+  height: 30px;
 }
 
-.inpCura{
+.inpValor{
+  font-weight: bold;
   width: 50px;
+  height: 15px;
+}
+
+.btnCura{
+  font-weight: bold;
+  width: 50px;
+  height: 30px;
 }
 
 .inpNome{
-  margin-left: 15%;
+  margin-left: 17%;
+  font-weight: bold;
+  font-size: 19px;
+  text-align: center;
   width: 220px;
   border-radius: 10px;
   border: solid 2px #bd93f9cc;
@@ -81,21 +98,21 @@ input{
 }
 
 .area {
-  margin: auto;
+ margin: auto;
 }
 
 img#heart {
-  width: 77px;
-  height: 77px;
-  right: 40px;
-  bottom: 53px;
+  width: 85px;
+  height: 85px;
+  right: 45px;
+  bottom: 61px;
   position: relative;
   background-color: transparent;
 }
 
 .status {
-    width: 250px;
-    height: 20px;
+    width: 100%;
+    height: 27px;
     margin: 5px 10px 10px 5px; /*top right bottom left*/
     background: whitesmoke;
     border: solid 5px black;
@@ -103,18 +120,47 @@ img#heart {
 }
 
 .status-life {
-  width: 251px;
-  height: 20px;
+  width: 101%;
+  height: 28px;
   background: red;
   border-radius: 2px;
   position: relative;
-
 }
 
 .total {
+  display: grid;
+  grid-template-columns: auto auto auto;
   position: relative;
-  bottom: 22px;
-  right: 47px;
+  bottom: 35px;
+  right: 57px;
+}
+
+.varLife {
+  width: 34px;
+  height: 12px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  border: solid 0;
+  font-weight: bold;
+}
+
+.spnBar{
+  position: relative;
+  padding-top: 40%;
+  width: 5px;
+  height: 11px;
+  color: white;
+}
+
+.lifeTotal{
+  width: 34px;
+  height: 12px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  border: solid 0;
+  font-weight: bold;
 }
 
 .grid-container {
@@ -136,7 +182,7 @@ img#heart {
 /* Div Escudo Inteiro  */
 
 .container {
-  width: 115px;
+  width: 105px;
   height: 110px;
   margin: 30px 15px 20px 0; /*top right bottom left*/
 
@@ -178,36 +224,32 @@ img#heart {
 /*DIV   Sentidos */
 
 .containerSentido {
-  margin: 20px 120px 10px 0; /*top right bottom left*/
+  width: 100%;
+  height: 100%;
 }
 
 .sentidos{
-  width: 100px;
-  height: 60px;
-}
-
-.sentido1 {
-  width: 130px;
-  height: 45px;
+ margin: 1px 0 5px 0;  /*top right bottom left*/
 }
 
 .percepcao {
-  flex: 1;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 700;
+  text-align: left;
+  font-size: 19px;
+  color: black;
+  font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  bottom: 35px;
-  right: 7px;
+  bottom: 210px;
+  left: 50px;
 }
 
 .numPercepcao{
-  width: 40px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 700;
+  width: 25px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin: auto;
   position: relative;
-  bottom: 53px;
-  left: 88px;
+  background-color: transparent;
+  border: transparent;
 }
