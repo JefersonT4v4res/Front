@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Trabalhando com imagens responsivas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="_imgs/fotoP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="_imgs/fotoM.png" type="image/png">
+        <img src="_imgs/fotoG.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio title="Tim Maia - Descobridor Dos Sete Mares 8Bit" preload="metadata" controls loop>
+        <source src="_midia/Tim Maia - Descobridor Dos Sete Mares (8 Bit_ Chiptune Mix).mp3" type="audio/mp3">
+        <source src="_midia/Tim Maia - Descobridor Dos Sete Mares (8 Bit_ Chiptune Mix).wav" type="audio/mp3">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="_midia/Tim Maia - Descobridor Dos Sete Mares (8 Bit_ Chiptune Mix).mp3" download="Tim Maia - Descobridor Dos Sete Mares (8 Bit_ Chiptune Mix).mp3" type="audio/mp3">Clique aqui</a> para baixar o arquivo MP3.</p>
+    </audio>
+
+    <h1>Inserindo vídeos em HTML5 localmente</h1>
+    <p>Este vídeo está inserido no meu próprio servidor.</p>
+    <video controls preload="metadata" width="50%" poster="_imgs/fotoM.png">
+        <source  src="_midia/water.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <br>
+    <iframe width="40%" height="310" src="https://www.youtube.com/embed/Fzx2t-PrDr4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</body>
+</html>
