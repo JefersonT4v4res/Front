@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram</title>
 </head>
 <body>
 
     <div class="container">
         <div class="instagram-Phone" id="phoneImg">
-            <img src="_img/imageInitial.png" alt="Profile photo">
+            <img id="phone-pic" src="_img/imageInitial.png" alt="Profile photo">
         </div>
 
         <div class="instagram-account">
@@ -19,17 +20,24 @@
             </div>
             <div id="account">
                 <img src="_img/perfil.png">
-                <div>
-                    <a href="#" id="login">Continuar como djeff.producoes</a>
-                    <div class="logoutArea">
-                        <p id="ask">Não é djeff.producoes?</p>
-                        <a href="#" id="logoutButton">Trocar de conta</a>
+                <div class="loginArea">
+                    <button id="btnLogin" type="button">
+                        <a href="#" id="login">Continuar como djeff.producoes</a>
+                    </button>
+                    <div  class="logoutArea">
+                        <p id="ask">Não é djeff.producoes?<a href="#" id="option"> Trocar de conta</a></p>
+                        
                     </div>
                 </div>
             </div>
         </div>
 
-        <div>
+        
+
+    </div>
+
+    <footer id="footer">
+        <div id="navegation-menu">
             <ul>
                 <li><a>Sobre</a></li>
                 <li><a>Blog</a></li>
@@ -43,10 +51,6 @@
                 <li><a>Localizações</a></li>
             </ul>
         </div>
-
-    </div>
-
-    <footer>
             <div id="social-media">
                 <select name="" id="">
                     <option value="pt-br" selected>Português (Brasil)</option>

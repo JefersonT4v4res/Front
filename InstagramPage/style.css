@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Quicksand:wght@500&family=Roboto:ital,wght@0,400;0,500;1,100&display=swap');
+
+body {
+    width: 80%;
+    margin: 5% auto;
+    background-color: #eeeeeeef;
+    display: block;
+    justify-content: center;
+}
+
+
+.container { 
+    display: flex;
+    justify-content: center;
+}
+
+img#phone-pic {
+    margin: auto;
+    padding-right: 20px;
+}
+
+.instagram-account {
+    text-align: center;
+    border: 2px solid rgba(250, 250, 250, 0.712);
+    background-color: #FAFAFA;
+    width: 350px;
+    height: 338px;
+    margin-top: 50px;
+}
+
+div#instagram-logo {
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+div#account {
+    padding-top: 15px;
+}
+
+.loginArea {
+    padding-top: 15px;
+}
+
+.logoutArea {
+    padding-top: 20px;
+}
+
+button {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #0095f6;
+    min-width: 260px auto;
+    height: 29px;
+    cursor: pointer;
+}
+
+p#ask, a#login {
+    font-family: 'Roboto', sans-serif;
+}
+
+a#login {
+    text-decoration: none;
+    color: #FAFAFA;
+    font-size: 9pt;
+    font-weight: 500;
+}
+
+p#ask {
+    font-size: 10pt;
+    
+}
+
+a#option {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding: 5px;
+}
