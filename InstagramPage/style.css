@@ -3,9 +3,11 @@
 @keyframes animacao {
     0% {opacity:1;}
     15% {opacity:1;}
-    40% {opacity:0;}
+    40% {opacity:1;}
     60% {opacity:0;}
-    100% {opacity:0;}        
+    100% {opacity:0;}
+    
+    
 } 
 
 body {
@@ -21,7 +23,8 @@ body {
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
-    margin-top: -60px;
+    margin-top: -70px;
+    margin-bottom: -20px;
 }
 
 div#phoneImg { 
@@ -33,7 +36,6 @@ div#phoneImg {
 }
 
 /* Animação */
-
 div#margin {
     margin: 96px 0 0 147.2px;
     position: relative;
@@ -44,30 +46,29 @@ div#margin {
     position: absolute;
     width: 246.3px; 
     height: 435.6px;
-    animation: animacao 35s infinite;
+    animation: animacao 60s infinite;
 }
 
   .animation img#animation5 {
-    animation-delay: 0s;
-    animation-timing-function:linear;
+    opacity: 0;
+    visibility: hidden;
   }
   .animation img#animation4 {
-    animation-delay: 7s;
-    animation-timing-function:linear;
+    opacity: 0;
+    visibility: hidden;
   }
   .animation img#animation3 {
-    animation-delay: 14s;
-    animation-timing-function:linear;
+    opacity: 0;
+    visibility: hidden;
   }
   .animation img#animation2 {
-      animation-delay: 21s;
-      animation-timing-function:linear;
+    opacity: 0;
+    visibility: hidden;
   }
   .animation img#animation1 {
-      animation-delay: 28s;
-      animation-timing-function:linear;
+    opacity: 0;
+    visibility: hidden;
   }
-
   /* Fim Animação */
 
   div#bigArea {
@@ -129,9 +130,38 @@ a#option {
     text-decoration: none;
 }
 
+.Ads {
+    margin: auto;
+    width: 350px;
+    height: 80px;
+}
+
+.Ads p#obtApp {
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+.Ads div#App {
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0 30px;
+}
+
+
+.Ads div#App a img {
+    width: 136px;
+    height: 40px;
+}
+
+
 footer {
     margin-top: 40px;
     text-align: center;
+}
+
+.navegation-menu {
+    padding-bottom: 0px;
+    margin-bottom: -12px;
 }
 
 ul#menus li {
@@ -144,11 +174,6 @@ ul#menus a, div#copyrights {
     text-decoration: none;
     color: #757575c0;
     font-size: 11pt;
-}
-
-.navegation-menu {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
 }
 
 div#last_div {
