@@ -5,9 +5,10 @@
     text-align: center;
     border: 1px solid #dbdbdb;
     background-color: #FFFFFF;
-    width: 360px;
+    width: 350px;
     height: 63px;
 }
+
 div#singUp {
     justify-content: center;
     align-items: center;
@@ -42,11 +43,18 @@ div#buttonArea {
     margin-top: 10px;
 }
 
-button#btnLogin {
+button#btnLogin2 { /*login*/
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgba(0, 149, 246, .3);
+    width: 264px;
+    height: 30px;
+}
+
+
+div#login {
     color: #FFFFFF;
     font-weight: 600;
-    width: 255px;
-    height: 30px;
 }
 
 div#divisor {
@@ -86,6 +94,7 @@ div#ou {
 }
 
 button#btnLoginFace {
+    border: none;
     background-color: transparent;
     color: #385185;
     font-weight: bold;
@@ -114,7 +123,25 @@ a#cadastro_A {
     font-weight: 500;
 }
 
-.ads {
-    justify-content: center;
+.Ads { /*login*/
+    margin: auto;
+    width: 350px;
+    height: 80px;
+}
+
+.Ads p#obtApp {/*login*/
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+.Ads div#App {/*login*/
     align-items: center;
+    justify-content: center;
+    margin: 10px 0 0 30px;
+}
+
+
+.Ads div#App a img { /*login*/
+    width: 136px;
+    height: 40px;
 }

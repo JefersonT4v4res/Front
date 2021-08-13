@@ -6,11 +6,9 @@
     40% {opacity:1;}
     60% {opacity:0;}
     100% {opacity:0;}
-    
-    
 } 
 
-body {
+body { /*2*/
     width: auto;
     margin-top: 95px;
     background-color: rgba(247, 247, 247, 0.87);
@@ -18,7 +16,7 @@ body {
     align-items: center;
 }
 
-.container { 
+.container { /*2*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +25,7 @@ body {
     margin-bottom: -20px;
 }
 
-div#phoneImg { 
+div#phoneImg { /*2*/
     background-image: url("/_img/bgPhones.png");
     width: 454px;
     height: 600px;
@@ -35,7 +33,7 @@ div#phoneImg {
     margin-right: -15px;
 }
 
-/* Animação */
+/* Animação */ /*2*/
 div#margin {
     margin: 96px 0 0 147.2px;
     position: relative;
@@ -71,38 +69,50 @@ div#margin {
   }
   /* Fim Animação */
 
-  div#bigArea {
-      margin-top: 15px;
-  }
+div#bigArea { /*2*/
+    margin: 15px 0 10px 0;
+}
 
-.instagram-account {
+.instagram-account { /*2*/
     display: block ;
     text-align: center;
     border: 1px solid #dbdbdb;
     background-color: #FFFFFF;
-    width: 100%;
+    width: 350px;
     height: 100%;
 }
 
-
-div#instagram-logo {
+div#instagram-logo { /*2*/
     padding-left: 10px;
     padding-top: 15px;
 }
 
-div#account {
+div#account { /*2*/
     padding-top: 15px;
 }
 
-.loginArea {
+div#SpaceimgPerfil {
+    width: 100%;
+    height: 105px;
+}
+
+.loginArea { /*2*/
     padding-top: 15px;
+    height: auto;
 }
 
-.logoutArea {
-    padding-top: 20px;
+.logoutArea { /*index*/
+    padding-top: 0;
 }
 
-button {
+.Space {
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+button#btnLogin { /*index*/
     border-style: none;
     border-radius: 5px;
     background-color: #0095f6;
@@ -111,50 +121,36 @@ button {
     cursor: pointer;
 }
 
-p#ask, a#login {
+div#spaceInsideBtn {
+    width: 240px;
+    height: 18px;
+}
+
+p#ask, a#option { /*index*/
     font-family: 'Roboto', sans-serif;
 }
 
-a#login {
+a#login { /*index*/
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     color: #FAFAFA;
-    font-size: 9pt;
+    font-size: 14px;
     font-weight: 500;
 }
 
-p#ask {
+p#ask { /*index*/
     font-size: 10pt;  
 }
 
-a#option {
+a#option { /*index*/
     text-decoration: none;
+    color: #0095f6;
+    font-size: 10pt;
+    font-weight: 500;
 }
 
-.Ads {
-    margin: auto;
-    width: 350px;
-    height: 80px;
-}
-
-.Ads p#obtApp {
-    margin: 10px 20px 10px 20px;
-    text-align: center;
-}
-
-.Ads div#App {
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0 0 30px;
-}
-
-
-.Ads div#App a img {
-    width: 136px;
-    height: 40px;
-}
-
-
-footer {
+footer { /*2*/
+    display: block;
     margin-top: 40px;
     text-align: center;
 }
