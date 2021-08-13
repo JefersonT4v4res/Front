@@ -5,39 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="_img/fav_icon.png" type="image/x-icon">
     <title>Instagram</title>
 </head>
 <body>
 
     <div class="container" >
-        <div class="instagram-Phone" id="phoneImg">
-            <img id="phone-pic" src="_img/imageInitial.png" alt="Profile photo">
-            <div class="animation" id="crossfade">    
-                <img id="animation1" src="_img/img1.PNG" alt="instagram demonstration pictures">
-                <img id="animation2" src="_img/img2.PNG" alt="instagram demonstration pictures">
-                <img id="animation3" src="_img/img3.PNG" alt="instagram demonstration pictures">
-                <img id="animation4" src="_img/img4.PNG" alt="instagram demonstration pictures">
-                <img id="animation5" src="_img/img5.PNG" alt="instagram demonstration pictures">
+            <div class="instagram-Phone" id="phoneImg">
+                <div id="margin">
+                    <img class="animation" id="animation1" src="_img/img1.PNG" alt="instagram demonstration pictures">
+                    <img class="animation" id="animation2" src="_img/img2.PNG" alt="instagram demonstration pictures">
+                    <img class="animation" id="animation3" src="_img/img3.PNG" alt="instagram demonstration pictures">
+                    <img class="animation" id="animation4" src="_img/img4.PNG" alt="instagram demonstration pictures">
+                    <img class="animation" id="animation5" src="_img/img5.PNG" alt="instagram demonstration pictures">
+                </div>
             </div>
-        </div>
 
-        <div class="instagram-account">
-            <div id="instagram-logo">
-                <img src="_img/instagram_logo.png" alt="Logo image">
-            </div>
-            <div id="account">
-                <img src="_img/perfil.png">
-                <div class="loginArea">
-                    <button id="btnLogin" type="button">
-                        <a href="#" id="login">Continuar como djeff.producoes</a>
-                    </button>
-                    <div  class="logoutArea">
-                        <p id="ask">Não é djeff.producoes?<a href="#" id="option"> Trocar de conta</a></p>
+        <div id="bigArea">    
+            <div class="instagram-account">
+                <div id="instagram-logo">
+                    <img src="_img/instagram_logo.png" alt="Logo image">
+                </div>
+                <div id="account">
+                    <div id="SpaceimgPerfil">
+                        <img id="imgPerfil" src="_img/perfil.png">
+                    </div>
+                    <div class="loginArea">
+                        <div class="Space">
+                            <button id="btnLogin" type="button">
+                                <div id="spaceInsideBtn">
+                                    <a href="#" id="login">Continuar como djeff.producoes</a>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="Space">
+                            <div  class="logoutArea">
+                                <p id="ask">Não é djeff.producoes?<a href="login.html" id="option"> Trocar de conta</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
  
     <footer id="footer">
         <div class="navegation-menu">
@@ -54,26 +64,37 @@
                 <li><a href="#">Localizações</a></li>
             </ul>
         </div>
-            <div id="last_div">
-                <select name="Language" id="slt_language">
-                    <option value="pt-br" selected>Português (Brasil)</option>
-                    <option value="es">Español</option>
-                    <option value="en">English</option>
-                    <option value="en-gb">English (UK)</option>
-                    <option value="fr">Français</option>
-                    <option value="id">Bahasa Indonesia</option>
-                    <option value="it">Italiano</option>
-                    <option value="ja">日本語</option>
-                    <option value="ko">한국어</option>
-                    <option value="ms">Bahasa Melayu</option>
-                    <option value="nb">Norsk</option>
-                    <option value="nl">Nederlands</option>
-                    <option value="pl">Polski</option>
-                </select>   
-                <div id="copyrights">
-                    <p>&copy 2021 Instagram do Facebook</p>
-                </div>
+        <div class="navegation-menu">
+            <ul id="menus">
+                <li><a href="#">Beleza</a></li>
+                <li><a href="#">Dança</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Comida e Bebida</a></li>
+                <li><a href="#">Casa e jardim</a></li>
+                <li><a href="#">Música</a></li>
+                <li><a href="#">Artes visuais</a></li>
+            </ul>
+        </div>
+        <div id="last_div">
+            <select name="Language" id="slt_language">
+                <option value="pt-br" selected>Português (Brasil)</option>
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="en-gb">English (UK)</option>
+                <option value="fr">Français</option>
+                <option value="id">Bahasa Indonesia</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="ms">Bahasa Melayu</option>
+                <option value="nb">Norsk</option>
+                <option value="nl">Nederlands</option>
+                <option value="pl">Polski</option>
+            </select>
+            <div id="copyrights">
+                <p>&copy 2021 Instagram do Facebook</p>
             </div>
+        </div>
     </footer>
 
 </body>
