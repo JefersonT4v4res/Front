@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <style>
+        body {
+            background-color:lightcyan;
+        }
+        p, li {
+            font-size: 17px;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        span#red {
+            color: red;
+        }
+        span#green {
+            color: green;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Operadores em JavaScript</h1>
+    <ul>
+        <li>Aritméticos</li>
+        <li>Atribuição</li>
+        <li>Relacionais</li>
+            <ul>
+                <li>&gt;</li>
+                <li>&lt;</li>
+                <li>&gt;&#61;</li>
+                <li>&lt;&#61;</li>
+                <li>&#61;&#61;</li>
+                <ol>
+                    <li>Caso de identidade</li>
+                        <ol>
+                            <li>&#8618; &#61; (recebe)</li>
+                            <li>&#8618; &#61;&#61; (O sinal de igualdade testa a grandeza/valor e não o tipo)</li>
+                                <ul>
+                                    <li>5 &#61;&#61; '5' &rarr; true</li>
+                                </ul>
+                            <li>&#8618; &#61;&#61;&#61; (O operador de identidade ou igualdade restrita. Testa se os valores são idênticos em valor e tipo)</li>
+                            <ul>
+                                <li>5 &#61;&#61;&#61; '5' &rarr; false</li>
+                                <li>5 &#61;&#61;&#61; 5 &rarr; true</li>
+                            </ul>
+                        </ol>
+                </ol>
+                <li>!&#61;</li>
+            </ul>
+        <li>Lógicos</li>
+            <ol>
+                <li>!  (Não/Negação)</li>
+                <li>&& (E/Conjunção)</li>
+                <li>|| (OU/Disjunção)</li>
+            </ol>
+        <li>Ternários</li>
+        <ul type="square">
+            <li>Ele se chama Ternários pois tem três partes. <code>Teste ? true : false</code></li>
+            <ul type="disc">
+                <li>?</li>
+                <li>:</li>
+            </ul>
+            <li>Teste&rarr; Nessa primeira parte vai um teste lógico e irá resultar um true ou false</li>
+            <li>True&rarr; O que vai acontecer se for true</li>
+            <li>False&rarr; O que vai acontecer se for false</li>
+            <ul>
+                <li>Ex.: media &gt;&#61; 7.0 ? "<span id="red">Aprovado</span>" : "<span id="green">Reprovado</span>"</li>
+            </ul>
+        </ul>
+    </ul>
+
+
+    
+
+    <script>
+
+    </script>
+   
+</body>
+</html>

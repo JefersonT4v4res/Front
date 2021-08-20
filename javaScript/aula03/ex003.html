@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <style>
+        body {
+            background-color: darkgrey ;
+        }
+        p, li {
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lidando com dados no prompt</h1>
+    <p>Falando de JavaScript nós temos de aprender a lidar com o "+". <br>
+        O "+" no js tem dois sentidos de uso, adição e concatenação. E quando usar os dois? <br>
+        number + number = adição <br>
+        String + String = concatenação
+    </p>
+    <p>o comando <code>window.prompt</code> retorna uma string, logo, para converter o valor em um <strong>number</strong><br> podemos usar os comandos:
+    <pre>
+        <code>
+            Number.parseInt(x) //valor inteiro
+            Number.parseFloat(x) //valor real
+            ou apenas
+            Number(n)
+        </code>
+    </pre>
+
+        A conversão também se é aplicada para String: 
+        <pre>
+            <code>
+                String(x)
+                ou
+                x.toString()
+            </code>
+        </pre>
+    </p>
+
+
+
+    <script>
+       //  var mensg = window.prompt('Qual o seu nome?')
+      //  window.alert('É um prazer conhecer você, ' + mensg) //concatenação
+      var n1 = Number.parseInt(window.prompt('Digite um número inteiro: '))
+      var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+      var soma = (n1 + n2)
+      //window.alert('A soma dos valores é: ' + soma)
+      window.alert(`A soma entre ${n1} e ${n2} é ${soma}`)
+    </script>
+   
+</body>
+</html>
