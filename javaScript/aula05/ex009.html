@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <style>
+        div#space {
+            width: 80px;
+            height: 30px;
+            background-color: rgb(161, 46, 46);
+            color: rgb(255, 106, 0);
+            text-align: center;
+            font-weight: bold;
+            line-height: 30px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        input#result {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" value="0" name="txtn1" id="txtn1"> +
+    <input type="number" value="0" name="txtn2" id="txtn2"> =
+    <input type="number" name="result" id="result" disabled>
+    <div id="space" onclick="somar()">Rocket-Man</div>
+    
+    <script>
+        function somar() {
+            var inp1 = window.document.getElementById('txtn1');
+            var inp2 = window.document.getElementById('txtn2');
+            var n1 = Number(inp1.value);
+            var n2 = Number(inp2.value);
+            var valor = n1 + n2;
+            window.document.querySelector('input#result').value = valor;
+        }
+    </script>
+</body>
+</html>

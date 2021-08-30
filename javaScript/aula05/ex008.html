@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Events</title>
+    <style>
+        div#area {
+            background: blue;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">Interaja...</div>
+   
+
+    <script>
+         var x = window.document.getElementById('area');
+            x.addEventListener('click', clicar)
+            x.addEventListener('mouseenter', entrar)
+            x.addEventListener('mouseout', saiu)
+
+        function clicar() {
+           var a = window.document.getElementById('area');
+           a.style.background="black";
+           a.style.color="yellow";
+        }
+        function entrar() {
+           var a = window.document.getElementById('area');
+           a.style.color="yellow";
+        }
+        function saiu() {
+           var a = window.document.getElementById('area');
+           a.style.background="blue";
+           a.style.color="white";
+        }
+    </script>
+</body>
+</html>

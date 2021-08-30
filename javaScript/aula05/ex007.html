@@ -10,9 +10,14 @@
     <title>Primeiros Passos com DOM</title>
 <style>
     body {
-        background:rgb(10, 75, 218);
+        background:rgb(71, 96, 150);
         color: rgb(252, 175, 33);
         font: normal 10pt Arial;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
     }
 </style>    
 
@@ -21,7 +26,7 @@
     <h1>Iniciando os estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div id="msg">Clique em mim</div>
+    <div id="msg"><a href="#">Clique em mim</a></div>
     <div name="lblnome">Esforçado</div>
 
     <!--O que é DOM? Document Object Model.
@@ -67,13 +72,10 @@
             //window.document.getElementByName('lblnome');
 
             //QuerySelector versões mais recente
-            var d = window.document.querySelector('div#msg'); //Quando é div usa "#"" e quando classe "."
-            d.style.color ='yellow';
-
-
-
-
-
+            var d = window.document.querySelector('div#msg');
+            d.style.color = 'red'
+            
+            d.innerText = 'Voltando aos estudos de JS'
 
     </script>
 </body>
