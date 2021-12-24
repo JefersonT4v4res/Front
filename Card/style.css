@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+body {
+    background-image: linear-gradient(to right,#6a2b9be5 20%, #2e79bb 65%, #081961ee 95%);
+    margin: 0;
+    padding: 0;
+}
+
+#canvas_basic {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#container_card {
+    position: absolute;
+    bottom: 15em;
+    right: 31em;
+    
+}
+
+#particles-js {
+    height: 100vh;
+}
+
+#card {
+    background-color:rgba(250, 250, 250, 0.25);
+    border-top: 3px solid rgba(255, 255, 255, 0.842);
+    border-left: 3px solid rgba(255, 255, 255, 0.842);
+    border-right: 1px solid rgba(255, 255, 255, 0.842);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.842);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    width: 550px;
+    height: 290px;
+    margin: 0 auto;
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
+    border-radius: 15px;
+    transform: rotate(-5deg);
+    -webkit-box-reflect: below 4px linear-gradient(transparent 40%, #ffffff 500%);
+}
+
+p, img {
+    position: relative;
+    transform: rotate(-1.1deg);
+    font-family: 'Oswald', sans-serif;
+}
+
+#card_Name {
+    font-size: 30px;
+    left: 25px;
+    bottom: 70px;
+}
+
+#owner_Name {
+    font-size: 30px;
+    left: 29px;
+    top: 30px;
+}
+
+#phrase {
+    font-size: 20px;
+    left: 33px;
+    bottom: 1px;
+}
+
+#rocket_Icon {
+    left: 485px;
+    top: 15px;
+}
+
+#content_card {
+    position: relative;
+    height: 0px;
+}
+
+@keyframes content-show {
+    0% {
+      left: 100%;
+      visibility: hidden;
+    }
+    100% {
+      left: 0;
+      visibility: visible;
+    }
+  }
+  
+  @keyframes content-hide {
+    0% {
+      left: 0;
+      visibility: visible;
+    }
+    100% {
+      left: 100%;
+      visibility: hidden;
+    }
+  }
