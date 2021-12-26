@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeferson Tavares" />
+    <meta name="description" content="Aprendendo efeito de vidro, blur, utilizando particulas e responsividade" />
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
     
     <title>Cartão do Jeff</title>
 </head>
 <body>
-    
-    <div id="particles-js"></div>
+
+    <canvas id="canvas-complex"></canvas>
+    <div id="particles-js">
+      
         <div id="container_card">
             <div id="card">
             <div id="content_card">
                 <img id="rocket_Icon" src="./rocket-solid.svg" width="40px" height="40px" alt="rocket icon">
                 <p id="card_Name">Space Card</p>
-                <p id="owner_Name">Djefersoul Loukas</p>
+                <p id="owner_Name">Jeferson Tavares</p>
                 <p id="phrase">DESENVOLVEDOR FRONT-END</p>
             </div>
         </div>
         </div>
+        
 
     </body>
 
@@ -98,5 +105,29 @@
         retina_detect: true
     });
     </script>
+
+<script src="./granim.js-2.0.0/dist/granim.min.js"></script>
+<script>
+    var granimInstance = new Granim({
+            element: '#canvas-complex',
+            direction: 'diagonal',
+            isPausedWhenNotInView: true,
+            states : {
+                "default-state": {
+                    gradients: [
+                        [
+                            { color: '#cc1fa9', pos: .4 },
+                            { color: '#943399', pos: .8 },
+                            { color: '#304bbd', pos: 1 }
+                        ], [
+                            { color: '#014794', pos: 0 },
+                            { color: '#002146', pos: .2 },
+                            { color: '#010408', pos: .75 }
+                        ],
+                    ]
+                }
+            }
+        });
+</script>
         
 </html>

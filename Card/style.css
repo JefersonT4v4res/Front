@@ -2,12 +2,32 @@
 
 
 body {
-    background-image: linear-gradient(to right,#6a2b9be5 20%, #2e79bb 65%, #081961ee 95%);
+  background-image: linear-gradient(to right,#6a2b9be5 20%, #2e79bb 65%, #081961ee 95%);
     margin: 0;
     padding: 0;
 }
 
-#canvas_basic {
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) { }
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) { }
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) { }
+/* Other Devices - Full HD, 4K */
+@media only screen and (min-width : 1800px) { }
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: block;
+}
+
+#canvas-complex {
   position: absolute;
   display: block;
   width: 100%;
@@ -23,10 +43,6 @@ body {
     bottom: 15em;
     right: 31em;
     
-}
-
-#particles-js {
-    height: 100vh;
 }
 
 #card {

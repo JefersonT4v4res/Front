@@ -1,0 +1,5 @@
+Para melhor funcionamento recomendo a utilização da API "granim.js".
+
+https://sarcadass.github.io/granim.js/
+
+Basta baixar, estrair os aquivos e colocar a pasta "granim.js-2.0.0" na mesma pasta em que está o projeto "Card"
