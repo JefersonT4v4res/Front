@@ -1,119 +1,287 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-
 body {
   background-image: linear-gradient(to right,#6a2b9be5 20%, #2e79bb 65%, #081961ee 95%);
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {}
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) { }
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) { }
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {}
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) { }
-/* Other Devices - Full HD, 4K */
-@media only screen and (min-width : 1800px) { }
-
 #particles-js {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: block;
+width: 100%;
+height: 100vh;
+position: relative;
+display: block;
 }
 
 #canvas-complex {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+position: absolute;
+display: block;
+width: 100%;
+height: 100vh;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
 }
 
 #container_card {
-    position: absolute;
-    bottom: 15em;
-    right: 31em;
-    
+  position: absolute;
+  right: 31px;  
 }
 
 #card {
-    background-color:rgba(250, 250, 250, 0.25);
-    border-top: 3px solid rgba(255, 255, 255, 0.842);
-    border-left: 3px solid rgba(255, 255, 255, 0.842);
-    border-right: 1px solid rgba(255, 255, 255, 0.842);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.842);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    width: 550px;
-    height: 290px;
-    margin: 0 auto;
-    backdrop-filter: blur( 12.5px );
-    -webkit-backdrop-filter: blur( 12.5px );
-    border-radius: 15px;
-    transform: rotate(-5deg);
-    -webkit-box-reflect: below 4px linear-gradient(transparent 40%, #ffffff 500%);
+  background-color:rgba(250, 250, 250, 0.25);
+  border-top: 3px solid rgba(255, 255, 255, 0.842);
+  border-left: 3px solid rgba(255, 255, 255, 0.842);
+  border-right: 1px solid rgba(255, 255, 255, 0.842);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.842);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  margin: 0 auto;
+  backdrop-filter: blur( 12.5px );
+  -webkit-backdrop-filter: blur( 12.5px );
+  border-radius: 15px;
+  transform: rotate(-5deg);
+  -webkit-box-reflect: below 4px linear-gradient(transparent 40%, #ffffff 500%);
 }
 
 p, img {
-    position: relative;
-    transform: rotate(-1.1deg);
-    font-family: 'Oswald', sans-serif;
-}
-
-#card_Name {
-    font-size: 30px;
-    left: 25px;
-    bottom: 70px;
-}
-
-#owner_Name {
-    font-size: 30px;
-    left: 29px;
-    top: 30px;
-}
-
-#phrase {
-    font-size: 20px;
-    left: 33px;
-    bottom: 1px;
-}
-
-#rocket_Icon {
-    left: 485px;
-    top: 15px;
+  position: relative;
+  transform: rotate(-1.1deg);
+  font-family: 'Oswald', sans-serif;
 }
 
 #content_card {
-    position: relative;
-    height: 0px;
+  position: relative;
+  height: 0px;
+  
 }
 
 @keyframes content-show {
-    0% {
-      left: 100%;
-      visibility: hidden;
-    }
-    100% {
-      left: 0;
-      visibility: visible;
-    }
+  0% {
+    left: 100%;
+    visibility: hidden;
+  }
+  100% {
+    left: 0;
+    visibility: visible;
+  }
+}
+
+@keyframes content-hide {
+  0% {
+    left: 0;
+    visibility: visible;
+  }
+  100% {
+    left: 100%;
+    visibility: hidden;
+  }
+}
+
+/* Custom, iPhone Retina */ 
+@media (min-width: 320px) {
+
+  #container_card {
+    position: absolute;
+    top: 200px;
+    left: 22px;  
+  }
+
+  #card {
+    width: 270px;
+    height: 160px;
+    
+  }
+
+  #content_card {
+    width: 170px;
+  }
+
+  #card_Name {
+    font-size: 18px;
+    left: 25px;
+    bottom: 35px;
+  }
+
+  #owner_Name {
+    font-size: 12px;
+    left: 29px;
+    top: 15px;
+  }
+
+  #phrase {
+    font-size: 13px;
+    left: 30px;
+    bottom: -3px;
+
+  }
+
+  #rocket_Icon {
+    width: 25px;
+    height: 25px;
+    left: 225px;
+    top: 15px;
+  }
+
+}
+/* Extra Small Devices, Phones */ 
+@media (min-width : 480px) {
+
+  #card {
+    width: 350px;
+    height: 200px;
+    
+  }
+
+  #content_card {
+    width: 270px;
+  }
+
+  #card_Name {
+    font-size: 25px;
+    bottom: 47px;
+  }
+
+  #owner_Name {
+    font-size: 23px;
+    left: 29px;
+    top: 15px;
+  }
+
+  #phrase {
+    font-size: 19px;
+    left: 30px;
+    bottom: 3px;
+
+  }
+
+  #rocket_Icon {
+    width: 30px;
+    height: 30px;
+    left: 285px;
+    top: 12px;
+  }
+
+ }
+
+/* Medium Devices, Desktops */
+@media (min-width : 960px) {
+
+  #card {
+    width: 430px;
+    height: 230px;
+    
+  }
+
+  #content_card {
+    width: 270px;
+  }
+
+  #card_Name {
+    font-size: 30px;
+    bottom: 50px;
+  }
+
+  #owner_Name {
+    font-size: 25px;
+  }
+
+  #phrase {
+    font-size: 20px;
+    left: 30px;
+    bottom: 6px;
+
+  }
+
+  #rocket_Icon {
+    width: 35px;
+    height: 35px;
+    left: 375px;
+    top: 15px;
+  }
+
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1400px) { 
+
+  #card {
+    width: 550px;
+    height: 290px;
+
+  }
+
+  #card_Name {
+    font-size: 30px;
+    left: 25px;
+    bottom: 60px;
   }
   
-  @keyframes content-hide {
-    0% {
-      left: 0;
-      visibility: visible;
-    }
-    100% {
-      left: 100%;
-      visibility: hidden;
-    }
+  #owner_Name {
+    font-size: 30px;
+    left: 30px;
+    top: 45px;
   }
+  
+  #phrase {
+    font-size: 20px;
+    left: 32px;
+    top: 21px;
+  }
+  
+  #rocket_Icon {
+    width: 40px;
+    height: 40px;
+    left: 485px;
+    top: 15px;
+  }
+  
+  #content_card {
+    width: 300px;  
+  }
+   
+}
+
+/* Other Devices - Full HD, 4K */
+@media only screen and (min-width : 1800px) {
+
+  #container_card {
+    left: 71px;  
+    top: 324px;  
+  }
+
+  #card {
+    width: 800px;
+    height: 420px;
+  }
+
+  #content_card {
+    width: 500px;
+  }
+
+  #card_Name {
+    font-size: 45px;
+    left: 50px;
+    bottom: 90px;
+  }
+  
+  #owner_Name {
+    font-size: 45px;
+    left: 50px;
+    top: 90px;
+  }
+  
+  #phrase {
+    font-size: 40px;
+    left: 50px;
+    top: 40px;
+  }
+  
+  #rocket_Icon {
+    width: 60px;
+    height: 60px;
+    left: 695px;
+    top: 30px;
+  }
+
+ }
