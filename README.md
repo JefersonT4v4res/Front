@@ -6,7 +6,7 @@
 
 > Criação de um cartão utilizando efeitos de blur, transparência, gradients e particulas.
 
-<img src="Space_card_image.PNG" alt="Cartão transparente">
+<img src="Space_card_image.PNG" alt="Estilo de cartão transparente">
 
 ----
 
