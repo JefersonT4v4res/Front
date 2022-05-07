@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+    <style>
+        body {
+            color: #fff;
+            background-color: rgba(15, 15, 15, 0.842);
+            display: flex;
+            flex-direction: column;
+            margin-left: 10rem;
+        }
+
+        h1, p {
+            margin-left: 5.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p {
+            width: 70px;
+            margin-left: 11rem;
+        }
+        section {
+            display: flex;
+        }
+
+        div {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            margin: 25px;
+            background-color: cornflowerblue;
+            border: 1px solid #000000;
+        }
+        button {
+            width: 105px;
+            height: 35px;
+            margin-left: 9rem;
+        }
+      
+        
+
+    </style>
+</head>
+<body>
+    <h1>Olá, D. Jeferson!</h1>
+    <p>clica ai</p>
+    <section>
+    <div id="bola1"></div>
+    <div id="bola2"></div>
+    </section>
+    <button type="submit" onclick="reset()">Resetar</button>
+    <script>
+       
+      document.querySelectorAll('div').forEach( function(div) {
+        
+        addEventListener("click", function(clicou) {
+
+        let el = event.target.id;
+
+        if(el == "bola1") {
+            cor = gerarCor();
+            document.getElementById("bola1").style.backgroundColor = cor;
+        }else if(el == "bola2") {
+            cor = gerarCor();
+            document.getElementById("bola2").style.backgroundColor = cor;
+        }
+       
+      });
+    }); 
+
+    function reset() {
+        document.getElementById("bola1").style.backgroundColor = 'cornflowerblue';
+        document.getElementById("bola2").style.backgroundColor = 'cornflowerblue';
+    }
+
+    function gerarCor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        
+        return color;
+        
+        }
+
+    </script>
+</body>
+</html>
